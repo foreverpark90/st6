@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boxmodel</title>
+  <!-- 외부에 있는 css 파일을 불러올 때 -->
+  <link rel="stylesheet" href="asset/css/style1.css">
+  <!-- html 문서내에서 css 선언 -->
+  
+  <style>
+   .box{
+    /* border-color: #000;
+    border-style: solid;
+    border-width: 1px; */
+    border: 10px dotted #000;
+    border-top-color: #f00;
+    background-color: #ccc;
+    /* 안쪽여백 padding
+    padding:상 우 하 좌 */
+    padding: 10px 20px 30px 40px;
+    /* 바깥쪽 여백 margin
+    margin:상우하좌 */
+    /* margin: 50px; */
+  }
+  .box:nth-of-type(2){padding: 50px; background-color: #c53131;
+  }
+  .box:nth-of-type(3){padding:10px 20px 50px; background-color: #00f;
+  }
+  /* block 레벨의 특징 */
+  /* *은 모든요소 모든 여백 없앤다. */
+  *{padding: 0; margin: 0;}
+  /* 요소의 수평크기
+  Lm+Lb+Lp+content(width)+rp+rb+rm
+  요소의 수직크기
+  tm+tb+tp+content(height)+bp+bbPbm
+  */
+  h1{background-color: #f68;}
+  .box:nth-of-type(1){margin: 50px;}
+  .box:nth-of-type(2){width: 300px; margin: 100px auto;}
+  </style>
+</head>
+<!-- 태그에 인라인으로 css 적용 -->
+<body>
+  <h1 class="page-title">웹폰트 사용</h1>
+   <!-- .box>lorem -->
+  <div class="box">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt unde officia corporis, 
+    tempore non adipisci repellat. Voluptas, corrupti itaque iusto labore, repudiandae reprehenderit 
+    beatae voluptatem sed perspiciatis, nam deleniti modi!
+  </div>
+   <!-- .box>lorem -->
+   <div class="box">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt unde officia corporis, 
+    tempore non adipisci repellat. Voluptas, corrupti itaque iusto labore, repudiandae reprehenderit 
+    beatae voluptatem sed perspiciatis, nam deleniti modi!
+  </div>
+  <!-- ul>li*4>a>{text$} -->
+  <ul>
+    <li><a href="">text1</a></li>
+    <li><a href="">text2</a></li>
+    <li><a href="">text3</a></li>
+    <li><a href="">text4</a></li>
+  </ul>
+  <!-- .box>lorem -->
+  <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error sit quisquam eius reprehenderit voluptatem, quia sint ea maxime nihil asperiores aspernatur id? At, aspernatur doloremque repellendus quisquam a esse adipisci.</div>
+
+</body>
+</html>

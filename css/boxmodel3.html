@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boxmodel3 - boxmodel 계산법</title>
+  <style>
+  *{margin: 0; padding: 0;}
+  .box{
+    /* auto(lm) + 10(lb) + 50(lp)+400(width) + 50(rp) + 10(rb) + auto(rm) */
+    width: 400px; 
+    height: 300px;
+    padding: 50px; 
+    border: 10px solid #f86;
+    background-color: #333; 
+    color: #fff; 
+    margin: 50px auto;  
+  }
+.box2{
+   box-sizing: border-box;
+   /* box-sizing은 박스모델 계산법을 지정 
+      width/height 지정값이 박스모델 content 영역지정 -> 기본값
+      박스모델 border+padding+content -> border-box width 선언된 값
+   */
+}
+.box1{box-sizing: content-box;}
+  </style>
+
+</head>
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+   <!-- .box.box$*2>lorem*2 -->
+   
+   <div class="box box1">
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi officia magni, quo consectetur natus harum recusandae odit fuga cumque voluptate facere id rem quia expedita! In alias dicta maxime.</div>
+    <div>Sequi dolor, necessitatibus laborum laudantium dolores modi quia, sunt asperiores doloribus nihil ad natus suscipit ipsam quaerat iste aut velit atque in. Vero veritatis aliquid quibusdam deleniti molestiae, sint id!</div>
+   </div>
+
+
+   <div class="box box2">
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi atque distinctio non reiciendis mollitia inventore quis. Corporis eos aspernatur aliquid fugit, expedita perferendis tempore magnam harum modi, beatae porro eveniet.</div>
+    <div>Laudantium iste quae consequuntur ullam voluptas, eveniet sapiente culpa. Consectetur unde libero quaerat. Sint, minima alias voluptatibus officia magni rerum qui at debitis. Veritatis suscipit atque mollitia a nobis? Officiis.</div>
+   </div>
+
+  </div>
+</body>
+</html>

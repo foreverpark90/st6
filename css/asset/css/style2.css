@@ -1,6 +1,17 @@
 /* 웹폰트 선언 */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Dancing Script', cursive; */
+
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 /* font-family: 'Nanum Gothic', sans-serif; /
+
+
+
+
+
+
 
 /* reset */
 
@@ -23,9 +34,11 @@ body{
 
 header{
   /* width: auto;  */
-  min-height: 150px; 
-  padding: 2rem; 
-  background-color: #757575;}
+  min-height: 50px; 
+  padding: 2rem; /*부모에게 padding 지정*/
+  background-color: #ccc;}
+
+  
 
   /* 
   h1은 너비를 1400을 가지고
@@ -35,6 +48,28 @@ header{
   .page-title{
     width:90%
     max-width: 1400px;
-    margin: 0 auto;
-    background-color: #fff;     
+    margin:0 auto;
+    /* margin:50px auto; 부모가 padding text가 없을경우는 margin x*/
+    background-color: #f00; 
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;    
+    color: #fff;
   }
+
+
+  .container{}
+
+  section{
+    background-color: #efefef;
+    margin-top: 50px;
+    height: 100px;
+    /* min-height: 100px; */
+    /* width: 50vw; */
+    width: 300px;
+    margin: 50px auto;
+  }
+
+  #section1{overflow: auto;}
+  #section2{overflow: hidden;}
+  /* #section3{overflow: scroll;} */
+  #section3{overflow: auto;}

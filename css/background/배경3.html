@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>다중배경</title>
+</head>
+<body>
+  <div class="wrap"></div>
+  <div class="content">
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magni esse recusandae repellendus. Magnam dicta odio sint illo ratione provident distinctio amet! Vel facere quaerat commodi voluptate ipsa iste quo!</div>
+    <div>Nihil fuga ad officia dolorum, modi sequi, cumque adipisci facere maxime doloribus non natus ipsa at beatae excepturi nemo veniam commodi dignissimos iure totam tenetur recusandae minus? Maxime, a nostrum.</div>
+  </div>
+  <style>
+   
+   *{margin: 0; padding: 0;}
+   .wrap{
+    width: 100%; 
+    height: 100vh;
+    background-color: #f86;
+    background-image: 
+    url(images/sun.png),
+    url(images/flower.png),
+    url(images/field2.png);
+    background-repeat: 
+    no-repeat, 
+    repeat-x, 
+    repeat-x;
+    /* background-position: right top; */
+    background-position: 
+    100% 0, 
+    0 100%, 
+    center bottom;
+  }
+
+  </style>
+</body>
+</html>

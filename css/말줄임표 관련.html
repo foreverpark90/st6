@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>말줄임표 관련 css</title>
+  <style>
+    .sample{
+      width: 400px;
+      margin: 100px auto;      
+      box-sizing: border-box;
+      border: 1px solid #000;
+  
+    }
+
+    .box{
+      padding: 30px;
+      background-color: #ccc;
+
+    }
+
+    .box p{
+      height: 150px;
+      background-color: #f68;
+      margin-bottom: 50px;
+      white-space: nowrap;
+      margin-bottom: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- .sample*2>.box>p*2>lorem*2 -->
+  <div class="sample">
+    <div class="box">
+      <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti adipisci excepturi amet maxime laborum, rerum aliquid. Impedit, quibusdam repellendus! Doloribus commodi cum illo sit soluta eaque, eveniet provident quis necessitatibus?</span><span>Nemo quis asperiores error voluptates vel aut veniam, molestiae maxime ipsa minus culpa autem? Ipsum incidunt vero sed distinctio necessitatibus deserunt libero earum, obcaecati voluptas dignissimos dolores cum rerum adipisci.</span></p>
+      <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque aspernatur voluptate minus animi quos perferendis labore, doloremque necessitatibus facere eum consectetur nostrum ipsa, modi quo veritatis repellendus dolorum? Quibusdam, eveniet.</span><span>Amet, id! Commodi non vero, incidunt enim eaque, deleniti architecto ipsa voluptates, repudiandae officia vel reprehenderit consectetur? Ullam dolore quod numquam amet beatae! Assumenda, voluptates quos corporis exercitationem illo consequatur!</span></p>
+    </div>
+  </div>
+  <div class="sample">
+    <div class="box">
+      <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero quibusdam, nisi mollitia corrupti pariatur at minima. Voluptatem voluptatum repudiandae omnis exercitationem officiis porro vel! Dolorem laudantium animi tempora eos?</span><span>Quae adipisci voluptatem numquam dolorem at voluptas dolores, placeat mollitia nulla earum impedit quis recusandae labore cumque est perferendis similique! Tempore quia, libero alias consectetur tempora molestias exercitationem explicabo culpa.</span></p>
+      <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi accusantium recusandae aspernatur repellat. Autem veritatis officiis rerum placeat minima consectetur maiores ullam et reprehenderit. Excepturi consequatur mollitia illum ad.</span><span>Incidunt provident, amet at molestias nihil adipisci alias hic tempora, praesentium quo quae illum autem atque expedita non fugiat blanditiis dolore veritatis maiores dignissimos. Aliquam dolores repellat dolore sit ab.</span></p>
+    </div>
+  </div>
+</body>
+</html>

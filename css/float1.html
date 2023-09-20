@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float</title>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo vitae quae nemo totam, atque molestias nobis ex, repudiandae officiis numquam corporis quam consectetur officia aspernatur ullam! Maxime, nam adipisci?
+      Accusantium, odio laudantium. Praesentium adipisci quia magnam eligendi soluta facere ullam recusandae nemo, sapiente ducimus, deserunt atque assumenda illum cum rerum deleniti molestias inventore. Ea numquam ipsam dicta possimus magni.
+    </div>
+    <div class="img-wrap"><img src="background/images/img1.png" alt="float연습"></div>
+    <div class="text text2">
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique placeat ut voluptatum! Numquam provident, voluptate reprehenderit ipsam aut, aperiam officia non nisi magni explicabo, sed quas natus sapiente at repellendus.</div>
+      <div>Dignissimos distinctio harum excepturi eligendi adipisci magnam perspiciatis, error minima praesentium ex, quae expedita quasi possimus saepe eum laborum. Tenetur laudantium alias facilis officiis beatae ullam earum at porro aliquam?</div>
+    </div>
+  </div>
+  <style>
+    /* img가 부모의 크기를 따르는 방법 */
+    /* 1. 부모에게 너비지정 */
+    /* 2. img에게 width:100%(부모의 너비를 따른다) */
+    /* 2-2 img에게 max-width:100%(이미지원본 크기보다 커지지 말아라) */
+    /* div처럼 블록요소에 자식으로 */
+    .text2{clear: left;
+
+    }
+    /* img의부모 */
+    .img-wrap{
+      /* 부모의 크기 50퍼센트만큼 차지하되 */
+      width: 50%;
+      /* 아무리 커도 400px(최대값)는 넘지 말아라 */
+      max-width: 400px;
+      border: 1px solid #f00;
+      background-color: #ccc;
+
+    }
+    .img-wrap img{
+      /* 부모나 형제의 횐쪽으로 흘러 */
+      float:left;
+      
+      border: 1px solid #000;
+      max-width: 100%;
+      /* width: 100%; */
+
+    }
+  </style>
+</body>
+</html>

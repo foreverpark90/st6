@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform2</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .wrap{
+      /* 브라우저의 너비와 높이를 다 써라 */
+      width: 100vw;
+      height: 100vh;
+      background-color: #ccc;
+    }
+    .center-box{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      /* 자신의 너비의 50%만큼 x축 왼쪽으로 위치를 변경해라 */
+      /* 자신의 높이의 50%만큼 y축 위로 위치를 변경해라 */
+      transform: translate(-50%,-50%);
+      background-color: #68f;
+      padding: 1em 2em;
+      font-size: 25px;
+
+    }
+    .center-box .inner{
+      font-size: 25px;
+      text-align: center;
+      background-color: #f86;
+      padding: 50px;
+    }
+    .center-box .inner p:first-child{
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .center-box .inner p{
+      margin-bottom: 0.5em;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="center-box">
+    <div class="inner">
+      <p>Section Title</p>
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

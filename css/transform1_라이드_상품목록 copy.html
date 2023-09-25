@@ -29,6 +29,7 @@
     /* 배경색이 적용되는 여백 양쪽 10px */
     padding:0 10px;
     position: relative;
+
   }
   .ec-base-product .prdList .thumbnail{
     position: relative;
@@ -55,21 +56,33 @@
   .ec-base-product .prdList .description {
 
     position: absolute; 
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 0, 0, 0.5); 
     left: 0px;
     bottom: 0px;
+    /* 자신의 높이만큼 아래로 이동 */
+    
     width: 100%;
     height: 100px;
     padding: 1em;
     box-sizing: border-box;
   }
-  /* transform 설정 시작 */
-  .ec-base-product .prdList .description{
+
+  
+  
+  /* transform 설정 */
+ /* .description 원래 위치로 */
+ .ec-base-product .prdList >li:hover .description{
+ transform: translate(0,0);
+ background-color: rgba(255, 255, 255, 0.9);
+ transition: all 0.5s;
+ }
+
+   /* transform 설정 시작 */
+   .ec-base-product .prdList .description{
     /* 본인요소의 크기만큼 y축으로 이동 */
-    
-  }
-
-
+    transform: translate(0,100%);
+    transition: all 0.1s;
+   }
 
   </style>
 </head>

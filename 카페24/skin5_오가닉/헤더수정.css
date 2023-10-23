@@ -1,0 +1,5 @@
+/*  #header.fixed  수정 */
+#header.fixed {background-color: rgb(255, 255, 255, 0.7);}
+#header.fixed .inner .top_nav_box {background-color: transparent;}
+/*  #header.fixed  끝 */
+#header.fixed .inner .top_nav_box .top_logo {display: none !important;}
